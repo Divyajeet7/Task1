@@ -1,0 +1,330 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    height: 65px;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    position: fixed;
+    opacity: .9;
+    background-color: white;
+}
+
+label.logo {
+    font-size: 35px;
+    line-height: 65px;
+    font-weight: bold;
+    padding: 0 30px;
+    margin-left: 25%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 25%;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 65px;
+    margin: 0 5px;
+}
+
+@media (max-width: 1072px) {
+    label.logo {
+        font-size: 15px;
+        padding-left: 30px;
+    }
+
+    nav ul li {
+        font-size: 8px;
+
+    }
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(197, 197, 197);
+}
+
+.aboutUs {
+    width: 70%;
+    height: 300px;
+    background-color: rgb(21, 73, 204);
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    color: white;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    padding: 20px 80px;
+}
+
+.aboutUs h1 {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.container2 {
+    background-color: rgb(197, 197, 197);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.ourVision {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    /* border: 2px solid black; */
+    margin: 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.ourMission {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    /* border: 2px solid red; */
+    margin: 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.container3 {
+
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.whoWeAre {
+    height: 250px;
+    width: 400px;
+    /* border: 1px solid black; */
+    margin: 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    padding: 22px;
+    font-size: 15px;
+}
+
+.whoWeAre h1 {
+    font-size: 55px;
+    padding-bottom: 19px;
+}
+
+.table {
+    height: 250px;
+    width: 400px;
+    /* border: 1px solid black; */
+    margin: 0 20px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: rgb(21, 73, 204);
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+
+td {
+    padding: 40px;
+    font-weight: bold;
+}
+
+.container4 {
+
+    background-color: rgb(197, 197, 197);
+    width: 100vw;
+    height: 400px;
+}
+
+.team-section {
+    width: 100%;
+}
+
+.team-section .container {
+    width: 40%;
+    margin: auto;
+}
+
+.team-section .container .row {
+    width: 60%;
+    margin: auto;
+}
+
+.team-section .container .row .title {
+    text-align: center;
+
+}
+
+.team-section .container .row .title h1 {
+    font-size: 35px;
+    color: black;
+}
+
+.team-section .container .row .title p {
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.team-section .container .team-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.team-section .container .team-card .card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.team-section .container .team-card .card .content {
+    width: 100%;
+    text-align: center;
+
+}
+
+.team-section .container .team-card .card .content h3 {
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+}
+
+.container5 {
+
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.apps-available {
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid black; */
+    margin: 0 90px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    justify-content: center;
+    padding: 22px;
+}
+
+.apps-available h1 {
+    padding-bottom: 10px;
+}
+
+.apps-available p {
+    font-size: 15px;
+}
+
+.picture {
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid black; */
+    margin: 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 22px;
+    font-size: 15px;
+}
+
+.container6 {
+    width: 100vw;
+    height: 250px;
+    background-color: rgb(21, 73, 204);
+}
+
+.footer {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    color: white;
+    padding: 40px 100px;
+}
+
+.footer h1 {
+    padding-bottom: 20px;
+}
+
+.col-3 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+}
+
+.col-4 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+}
+
+.col-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+}
+
+
+.col-2 h3 {
+    padding-bottom: 10px;
+}
+
+.col-3 h3 {
+    padding-bottom: 10px;
+}
+
+.col-4 h3 {
+    padding-bottom: 10px;
+}
+
+.col-1 {
+    width: 600px;
+}
+
+a {
+    color: white;
+}

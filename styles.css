@@ -38,27 +38,16 @@ nav ul li {
     margin: 0 5px;
 }
 
-@media (max-width: 1072px) {
-    label.logo {
-        font-size: 15px;
-        padding-left: 30px;
-    }
-
-    nav ul li {
-        font-size: 8px;
-
-    }
-}
-
 .container1 {
     display: flex;
     justify-content: center;
     background-color: rgb(197, 197, 197);
+    width: 100vw;
 }
 
 .aboutUs {
-    width: 70%;
-    height: 300px;
+    width: 70vw;
+    /* height: 300px; */
     background-color: rgb(21, 73, 204);
     border-bottom-left-radius: 80px;
     border-bottom-right-radius: 80px;
@@ -72,16 +61,19 @@ nav ul li {
 .aboutUs h1 {
     margin-top: 80px;
     margin-bottom: 20px;
-    font-size: 40px;
+    font-size: 2.2rem;
 }
+
+
 
 .container2 {
     background-color: rgb(197, 197, 197);
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: center;
     align-items: center;
     padding: 50px;
+    width: 100vw;
 }
 
 .ourVision {
@@ -91,10 +83,11 @@ nav ul li {
     /* border: 2px solid black; */
     margin: 0 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     text-align: center;
+    padding-top: 26px;
     border-radius: 2px;
 }
 
@@ -105,16 +98,19 @@ nav ul li {
     /* border: 2px solid red; */
     margin: 0 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    padding-top: 26px;
     text-align: center;
     border-radius: 2px;
 }
 
+ 
+
 .container3 {
 
-    height: 400px;
+    /* height: 400px; */
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -138,14 +134,14 @@ nav ul li {
 }
 
 .whoWeAre h1 {
-    font-size: 55px;
+    font-size: 3rem;
     padding-bottom: 19px;
 }
 
 .table {
     height: 250px;
     width: 400px;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     margin: 0 20px;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -167,11 +163,15 @@ td {
 
     background-color: rgb(197, 197, 197);
     width: 100vw;
-    height: 400px;
+    /* height: 400px; */
+    display: flex;
+    justify-content: center;
 }
 
 .team-section {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .team-section .container {
@@ -232,7 +232,7 @@ td {
 .container5 {
 
     width: 100vw;
-    height: 500px;
+    /* height: 500px; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -241,7 +241,7 @@ td {
 }
 
 .apps-available {
-    height: 400px;
+    /* height: 400px; */
     width: 300px;
     /* border: 1px solid black; */
     margin: 0 90px;
@@ -263,8 +263,8 @@ td {
 }
 
 .picture {
-    height: 400px;
-    width: 300px;
+    /* height: 400px; */
+    /* width: 300px; */
     /* border: 1px solid black; */
     margin: 0 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -274,7 +274,7 @@ td {
 
 .container6 {
     width: 100vw;
-    height: 250px;
+    /* height: 250px; */
     background-color: rgb(21, 73, 204);
 }
 
@@ -327,4 +327,143 @@ td {
 
 a {
     color: white;
+}
+
+@media (max-width: 1072px) {
+    label.logo {
+        font-size: 15px;
+        padding-left: 30px;
+    }
+
+    nav ul li {
+        font-size: 8px;
+
+    }
+}
+
+/* @media (max-width:880px) {
+    .team-section{
+       width: 40%;
+    }
+} */
+
+@media (max-width:1140px){
+    .para1{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:649px){
+
+    nav ul{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    label.logo{
+        margin: 0;
+    }
+}
+
+@media (max-width:860px){
+
+    .container2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .ourMission{
+        margin: 20px 0;
+    }
+    
+    .container3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .para1{
+        font-size: 10px;
+    }
+
+    .whoWeAre{
+        margin-bottom: 20px;
+    }
+
+    .whoWeAre h1{
+        font-size: 20px;
+    }
+    
+    .whoWeAre p{
+        font-size: 15px;
+    }
+
+    .container5{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .apps-available{
+        margin-bottom: 20px;
+    }
+
+    .container4{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .team-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer{
+        font-size: 15px;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .col-1{
+        padding: 20px 40px;
+    }
+
+    .col-1 p{
+        display: none;
+    }
+
+    .col-2{
+        padding: 10px 40px;
+    }
+
+    .col-3{
+        padding: 10px 40px;
+    }
+
+}
+
+@media (max-width: 700px){
+    .main{
+        overflow-y: scroll;
+        overflow-x: scroll;
+    }
 }
